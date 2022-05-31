@@ -1,0 +1,45 @@
+/* INDEX */
+.info {
+  text-align: center;
+  margin: 5px;
+  padding: 2px;
+  opacity: 300%;
+  color: black;
+  height: 70vh; }
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none; }
+
+header {
+  text-align: center; }
+
+h1 {
+  text-align: center;
+  font-family: 'Akshar', sans-serif;
+  text-decoration: underline;
+  font-size: 45px;
+  opacity: 150%;
+  font-weight: bolder;
+  color: black;
+  padding: 0px; }
+
+h2 {
+  text-align: center;
+  font-family: 'Akshar', sans-serif;
+  text-decoration: underline;
+  font-size: 35px;
+  color: black; }
+
+body {
+  background-color: #ffdc95; }
+
+/* ESTILOS MENU */
+.navbar {
+  background-color: #ffdc95; }
+
+.dropdown-menu {
+  background-color: #ffdc95; }
