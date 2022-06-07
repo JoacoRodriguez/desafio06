@@ -1,4 +1,7 @@
+@import "utilities/variables";
+
 /* INDEX */
+
 .info{
     text-align: center;
     margin: 5px;
@@ -6,4 +9,8 @@
     opacity: 300%;
     color: black;
     height: 70vh;
+}
+
+.letraCarrusel{
+    color: $color-principal;
 }

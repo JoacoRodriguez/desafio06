@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Contacto</title> 
+
+    <!-- Fuente titulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Fuente subtitulo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MENU -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="quienesSomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tienda</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="tienda.html">Cervezas</a></li>
+                                <li><a class="dropdown-item" href="copas.html">Copas</a></li>
+                                <li><a class="dropdown-item" href="indumentaria.html">Indumentaria</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="preguntas.html">Preguntas frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    <!-- LOGO Y TITULOS -->
+    <header>
+        <a href="../index.html"></a><img src="../img/logo1.png" alt="Logo" class="logo"></a>
+        <h1>Cerveceria Artesanal</h1>
+        <h2>La cerveza mas premiada de Córdoba</h2>
+    </header>
+
+    <!-- FORMULARIO -->
+    
+    <section>
+            <h3>Contacto</h3>
+            <h4>Formulario de Contacto</h4>
+            <div class="formulario">    
+                <form action="">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" class="entrada">
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono:</label>
+                        <input type="number" id="telefono" name="telefono" placeholder="Ingrese su telefono" class="entrada">
+                    </div>
+                    <div>
+                        <label for="mail">Email: </label>
+                        <input type="email" id="mail" name="mail" placeholder="Ingrese su Email" class="entrada">
+                    </div>
+                    <div>
+                        <div><label for="mensaje">Consulta: </label></div>
+                        <textarea name="mensaje" id="mensaje" cols="25" rows="10" placeholder="Ingrese su mensaje" class="entrada"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-light">Enviar</button>
+                    <button type="reset" class="btn btn-light">Borrar</button>
+                </form>
+            </div>
+            
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108977.23050264666!2d-64.2643842944634!3d-31.399287634370907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses!2sar!4v1649897317244!5m2!1ses!2sar" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        
+    </section>
+
+    <footer>
+        <nav class="piePagina">
+            <ul>
+                <li><img src="../img/instagramLogo.png" alt="instagram" width="17px">
+                <a href="https://www.instagram.com/cervezacheverry/" target="_blank">Instagram</a></li>
+                <li><img src="../img/facebookLogo.svg" alt="Facebook" width="17px"><a href="https://www.facebook.com/cervezacheverry/" target="_blank">Facebook</a></li>
+                <li>Todos los derechos reservados</li>
+            </ul>
+        </nav>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -2,6 +2,7 @@
 @import "utilities/variables";
 @import "utilities/mixins";
 
+
 *{
     @include reset;
 }
@@ -11,9 +12,7 @@ header{
 }
 
 h1{
-    text-align: center;
-    font-family: 'Akshar', sans-serif;
-    text-decoration: underline;
+    @include titulos;
     font-size: 45px;
     opacity: 150%;
     font-weight: bolder;
@@ -22,9 +21,7 @@ h1{
 }
 
 h2{
-    text-align: center;
-    font-family: 'Akshar', sans-serif;
-    text-decoration: underline;
+    @include titulos;
     font-size: 35px;
     color: $color-principal;
 }
