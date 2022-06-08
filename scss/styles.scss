@@ -1,7 +1,6 @@
-@import "index";
 @import "utilities/variables";
 @import "utilities/mixins";
-
+@import "partials/index";
 
 *{
     @include reset;
