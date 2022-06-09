@@ -1,0 +1,19 @@
+.copas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    margin: 40px 80px;
+}
+
+.copas-img{
+    width: 200px;
+    height: 250px;
+    transition: all 0.1s;
+}
+
+.copas-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

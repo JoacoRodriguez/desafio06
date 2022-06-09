@@ -3,6 +3,10 @@
 @import "partials/index";
 @import "partials/quienesSomos";
 @import "partials/footer";
+@import "partials/tienda";
+@import "partials/copas";
+@import "partials/contacto";
+@import "partials/indumentaria";
 
 *{
     @include reset;
@@ -19,12 +23,16 @@ h1{
     font-weight: bolder;
     color: $color-principal;
     padding: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 h2{
     @include titulos;
     font-size: 35px;
     color: $color-principal;
+    display: flex;
+    justify-content: center;
 }
 
 body{
@@ -35,7 +43,6 @@ body{
 
 .navbar{
     background-color: $color-fondo;
-    
 }
 
 .dropdown-menu{

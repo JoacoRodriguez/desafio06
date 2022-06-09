@@ -1,0 +1,29 @@
+.formulario{
+    padding: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.entrada{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: 'Akshar', sans-serif;
+}
+
+.mapa{
+    display: none;
+}
+
+@media screen and(min-width:720px) {
+    .mapa{
+        display: flex;
+        justify-content: center;
+    }
+}

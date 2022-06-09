@@ -1,12 +1,14 @@
 .quienesSomos{
     display: grid;
-    grid-template-areas:titulo titulo
-                        parrafo parrafo;
+    grid-template-areas:"titulo titulo"
+                        "parrafo parrafo"
+                        "parrafo parrafo";
     height: auto;
     text-align: center;
 }
 
 .tituloFamiliar{
+    @include titulos;
     grid-area: titulo;
     padding: 5px;
     margin: 5px;
@@ -22,20 +24,33 @@
     display: none;
 }
 
-
-@media screen and (min-width:480px){
+@media screen and (min-width:720px){
     .quienesSomos{
-        grid-template-areas:titulo titulo
-                            parrafo parrafo
-                            video video;
-        height: auto;
+        grid-template-areas:"titulo titulo"
+                            "parrafo parrafo"
+                            "video video";
         text-align: center;
     }
 
     .video{
         grid-area: video;
-        display: contents;
-        width: 250px;
+        display: flex;
+        justify-content: center;
     }
-    
+}
+
+@media screen and (min-width:1280px){
+    .quienesSomos{
+        grid-template-areas:"titulo titulo video video"
+                            "parrafo parrafo video video";
+        height: auto;
+        width: auto;
+        row-gap: 1rem;
+    }
+
+    .video{
+        margin-top: 10px;
+        padding-top: 10px;
+        grid-area: video;
+    }
 }
