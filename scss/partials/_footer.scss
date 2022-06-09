@@ -1,0 +1,77 @@
+/* ESTILOS FOOTER */
+
+.piePagina{
+    display: grid;
+    grid-template-areas:imgFooter
+                        imgFooterDos;
+    height: auto;
+}
+
+.imgFooter{
+    grid-area: imgFooter;
+}
+
+.imgFooterDos{
+    grid-area: imgFooterDos;
+}
+
+.parrafoFooter{
+    display: none;
+}
+
+.parrafoFooterDos{
+    display: none;
+}
+
+.piePagina ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: $color-principal;
+}
+
+footer{
+    text-align: center;
+    color: $color-principal;
+}
+
+@media screen and (min-width:480px){
+    .piePagina{
+        
+        grid-template-areas:imgFooter imgFooterDos
+                            parrafoFooter parrafoFooter
+                            parrafoFooterDos parrafoFooterDos;
+        height: auto;
+        column-gap: 1rem;
+    }
+
+    .parrafoFooter{
+        display: contents;
+        grid-area: parrafoFooterDos;
+    }
+
+    .parrafoFooterDos{
+        grid-area: parrafoFooterDos;
+        display: contents;
+    }
+}
+
+@media screen and (min-width:720px){
+    .piePagina{
+        grid-template-areas:imgFooter 
+                            imgFooterDos
+                            parrafoFooter
+                            parrafoFooterDos;
+        height: auto;
+        column-gap: 1rem;
+    }
+
+    .parrafoFooter{
+        display: contents;
+        grid-area: parrafoFooterDos;
+    }
+
+    .parrafoFooterDos{
+        grid-area: parrafoFooterDos;
+        display: contents;
+    }
+}

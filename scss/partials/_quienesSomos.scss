@@ -1,0 +1,41 @@
+.quienesSomos{
+    display: grid;
+    grid-template-areas:titulo titulo
+                        parrafo parrafo;
+    height: auto;
+    text-align: center;
+}
+
+.tituloFamiliar{
+    grid-area: titulo;
+    padding: 5px;
+    margin: 5px;
+}
+
+.historiaFamiliar{
+    grid-area: parrafo;
+    text-align: center;
+    padding: 50px;
+}
+
+.video{
+    display: none;
+}
+
+
+@media screen and (min-width:480px){
+    .quienesSomos{
+        grid-template-areas:titulo titulo
+                            parrafo parrafo
+                            video video;
+        height: auto;
+        text-align: center;
+    }
+
+    .video{
+        grid-area: video;
+        display: contents;
+        width: 250px;
+    }
+    
+}
