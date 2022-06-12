@@ -1,19 +1,61 @@
-.copas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
-    justify-items: center;
-    margin: 40px 80px;
-}
 
 .copas-img{
-    width: 200px;
-    height: 250px;
-    transition: all 0.1s;
+    display: grid;
+    grid-template-areas: "copa1"
+                        "copa2"
+                        "copa3"
+                        "copa4"
+                        "copa5"
+                        "copa6";
+    justify-content: center;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
 
-.copas-img img{
+
+.copas-img .card img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+.copa1{
+    grid-area: copa1;
+}
+.copa2{
+    grid-area: copa2;
+}
+.copa3{
+    grid-area: copa3;
+}
+.copa4{
+    grid-area: copa4;
+}
+.copa5{
+    grid-area: copa5;
+}
+.copa6{
+    grid-area: copa6;
+}
+
+@media screen and(min-width:600px){
+    .copas-img{
+        display: grid;
+        grid-template-areas: "copa1 copa2"
+                            "copa3 copa4"
+                            "copa5 copa6";
+        justify-content: center;
+    }
+}
+
+@media screen and(min-width:1280px){
+    .copas-img{
+        display: grid;
+        grid-template-areas: "copa1 copa2 copa3"
+                            "copa4 copa5 copa6";
+        justify-content: center;
+    }
+}
+
+
+

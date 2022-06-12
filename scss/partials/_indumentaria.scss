@@ -1,14 +1,17 @@
 .indumentaria{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    margin: 40px 80px;
+    grid-template-areas:"ind1"
+                        "ind2"
+                        "ind3"
+                        "ind4";
+    justify-content: center;
+    row-gap: 1rem;
+    column-gap: 1rem;
 }
 
 .indumentaria-img{
-    width: 200px;
-    height: 250px;
+    width: auto;
+    height: auto;
     transition: all 0.1s;
 }
 
@@ -32,4 +35,19 @@
 
 .ind4{
     grid-area: ind4;
+}
+
+@media screen and(min-width:600px){
+    .indumentaria{
+        display: grid;
+        grid-template-areas:"ind1 ind2"
+                            "ind3 ind4";
+    }
+}
+
+@media screen and(min-width:1280px){
+    .indumentaria{
+        display: grid;
+        grid-template-areas:"ind1 ind2 ind3 ind4";
+    }
 }
