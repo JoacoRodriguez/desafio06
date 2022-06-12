@@ -7,6 +7,10 @@
   color: black;
   height: fit-content; }
 
+.tituloCarrusel {
+  text-decoration: underline;
+  font-weight: bolder; }
+
 .carousel .carousel-inner .carousel-item .imagen {
   object-fit: cover;
   display: flex;
