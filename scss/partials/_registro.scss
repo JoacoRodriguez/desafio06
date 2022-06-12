@@ -25,6 +25,10 @@
     text-align: center;
 }
 
+.tituloIniciarSesion{
+    text-align: center;
+}
+
 .formularioRegistro{
     padding: 10px;
     color: black;
@@ -44,3 +48,20 @@
     font-family: 'Akshar', sans-serif;
 }
 
+@media screen and(min-width:720px){
+    .inicioSesion{
+        display: grid;
+        grid-template-areas: "iniciarSesion formularioRegistro"
+                            "iniciarSesion formularioRegistro";
+    }
+    
+    .iniciarSesion{
+        grid-area: iniciarSesion;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .formularioRegistro{
+        grid-area: formularioRegistro;
+    }
+}

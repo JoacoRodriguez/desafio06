@@ -177,7 +177,8 @@ footer {
 @media screen and (min-width: 1280px) {
   .tienda {
     height: auto;
-    grid-template-areas: "imagen1 imagen2 imagen3 imagen4" "imagen5 imagen6 imagen7 imagen8"; } }
+    grid-template-areas: "imagen1 imagen2 imagen3 imagen4" "imagen5 imagen6 imagen7 imagen8";
+    margin-right: 15px; } }
 
 .copas {
   display: grid;
@@ -279,6 +280,9 @@ footer {
 .registrarse {
   text-align: center; }
 
+.tituloIniciarSesion {
+  text-align: center; }
+
 .formularioRegistro {
   padding: 10px;
   color: black;
@@ -295,6 +299,17 @@ footer {
   margin-bottom: 16px;
   border: 1px solid black;
   font-family: 'Akshar', sans-serif; }
+
+@media screen and (min-width: 720px) {
+  .inicioSesion {
+    display: grid;
+    grid-template-areas: "iniciarSesion formularioRegistro" "iniciarSesion formularioRegistro"; }
+  .iniciarSesion {
+    grid-area: iniciarSesion;
+    padding-bottom: 10px;
+    margin-bottom: 20px; }
+  .formularioRegistro {
+    grid-area: formularioRegistro; } }
 
 * {
   margin: 0;
