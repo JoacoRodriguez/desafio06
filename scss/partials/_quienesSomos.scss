@@ -12,12 +12,13 @@
     grid-area: titulo;
     padding: 5px;
     margin: 5px;
+    text-align: center;
 }
 
 .historiaFamiliar{
     grid-area: parrafo;
     text-align: center;
-    padding: 50px;
+    padding: 10px;
 }
 
 .video{
@@ -29,7 +30,7 @@
         grid-template-areas:"titulo titulo"
                             "parrafo parrafo"
                             "video video";
-        text-align: center;
+        
     }
 
     .video{
