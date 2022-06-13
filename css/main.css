@@ -150,9 +150,6 @@ a {
   align-items: center;
   bottom: 0; }
 
-.prueba {
-  bottom: 0; }
-
 .imgFooter {
   grid-area: imgFooter; }
 
@@ -170,13 +167,16 @@ a {
   text-decoration: none;
   color: white; }
 
+.madeBy {
+  grid-area: madeBy; }
+
 footer {
   text-align: center;
   color: white; }
 
 @media screen and (min-width: 720px) {
   .piePagina {
-    grid-template-areas: "imgFooter imgFooterDos" "parrafoFooter parrafoFooter" "parrafoFooterDos parrafoFooterDos";
+    grid-template-areas: "imgFooter imgFooterDos" "parrafoFooter parrafoFooter" "parrafoFooterDos parrafoFooterDos" "madeBy madeBy";
     height: auto;
     column-gap: 1rem;
     justify-content: center; }
@@ -192,7 +192,7 @@ footer {
 
 @media screen and (min-width: 1280px) {
   .piePagina {
-    grid-template-areas: "imgFooter"  "imgFooterDos" "parrafoFooter" "parrafoFooterDos";
+    grid-template-areas: "imgFooter"  "imgFooterDos" "parrafoFooter" "parrafoFooterDos" "madeBy";
     height: auto;
     column-gap: 1rem; }
   .parrafoFooter {
@@ -299,7 +299,8 @@ footer {
   color: white;
   text-align: center;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  grid-area: formulario; }
 
 .entrada {
   width: 100%;
@@ -315,9 +316,17 @@ footer {
   display: none; }
 
 @media screen and (min-width: 720px) {
+  .contactoForm {
+    display: grid;
+    grid-template-areas: "formulario formulario mapa" "formulario formulario mapa";
+    justify-content: center; }
   .mapa {
     display: flex;
-    justify-content: center; } }
+    justify-content: center;
+    grid-area: mapa;
+    align-self: center;
+    margin: 20px;
+    padding: 20px; } }
 
 .indumentaria {
   display: grid;
@@ -416,3 +425,7 @@ footer {
   .formularioRegistro {
     grid-area: formularioRegistro;
     padding-left: 33px; } }
+
+.linkContacto {
+  color: black;
+  text-decoration: none; }

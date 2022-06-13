@@ -14,6 +14,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    grid-area: formulario;
 }
 
 .entrada{
@@ -32,8 +33,19 @@
 }
 
 @media screen and(min-width:720px) {
+    .contactoForm{
+        display: grid;
+        grid-template-areas: "formulario formulario mapa"
+                            "formulario formulario mapa";
+        justify-content: center;
+    }
+    
     .mapa{
         display: flex;
         justify-content: center;
+        grid-area: mapa;
+        align-self: center;
+        margin: 20px;
+        padding: 20px;
     }
 }
