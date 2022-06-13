@@ -19,6 +19,7 @@
     grid-area: parrafo;
     text-align: center;
     padding: 10px;
+    color: $color-principal;
 }
 
 .video{
@@ -43,6 +44,7 @@
 
 @media screen and (min-width:1280px){
     .quienesSomos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:"titulo titulo video video"
                             "parrafo parrafo video video";
         height: auto;

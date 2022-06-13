@@ -1,14 +1,5 @@
 @import "utilities/variables";
 @import "utilities/mixins";
-@import "partials/index";
-@import "partials/quienesSomos";
-@import "partials/footer";
-@import "partials/tienda";
-@import "partials/copas";
-@import "partials/contacto";
-@import "partials/indumentaria";
-@import "partials/registro";
-
 *{
     @include reset;
 }
@@ -37,16 +28,30 @@ h2{
 }
 
 body{
-    background-color: rgb(255, 220, 149);
+    background-image: url(../img/imgFondo.jpeg);
 }
 
 /* ESTILOS MENU */
 
 .navbar{
     background-color: $color-fondo;
+    color: $color-principal;
 }
 
 .dropdown-menu{
     background-color: $color-fondo;
 }
 
+.navbar-nav{
+    color: $color-principal;
+}
+
+
+@import "partials/index";
+@import "partials/quienesSomos";
+@import "partials/footer";
+@import "partials/tienda";
+@import "partials/copas";
+@import "partials/contacto";
+@import "partials/indumentaria";
+@import "partials/registro";

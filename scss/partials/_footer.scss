@@ -5,9 +5,14 @@
     grid-template-areas:"imgFooter"
                         "imgFooterDos";
     height: auto;
-    background-color: rgba(255, 220, 149, 0.22);
+    min-height: 30vh;
+    align-items: center;
+    bottom: 0;
 }
 
+.prueba{
+    bottom: 0;
+}
 .imgFooter{
     grid-area: imgFooter;
 }

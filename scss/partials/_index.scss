@@ -4,7 +4,7 @@
 
 a{
     text-decoration: none;
-    color: black;
+    color: $color-principal;
 }
 
 .info{
@@ -12,13 +12,15 @@ a{
     margin: 5px;
     padding: 2px;
     opacity: 300%;
-    color: black;
+    color: $color-principal;
     height: fit-content;
 }
 
 .tituloCarrusel{
     text-decoration: underline;
     font-weight: bolder;
+    color: $color-principal;
+
 }
 
 .carousel{

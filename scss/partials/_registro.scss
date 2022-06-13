@@ -4,7 +4,7 @@
 
 .iniciarSesion{
     padding: 10px;
-    color: black;
+    color: $color-principal;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -23,15 +23,18 @@
 
 .registrarse{
     text-align: center;
+    color: $color-principal;
 }
 
 .tituloIniciarSesion{
     text-align: center;
+    color: $color-principal;
+
 }
 
 .formularioRegistro{
     padding: 10px;
-    color: black;
+    color: $color-principal;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -53,15 +56,20 @@
         display: grid;
         grid-template-areas: "iniciarSesion formularioRegistro"
                             "iniciarSesion formularioRegistro";
+        justify-content: center;
+        gap: 25px;
     }
     
     .iniciarSesion{
         grid-area: iniciarSesion;
         padding-bottom: 10px;
         margin-bottom: 20px;
+
+
     }
     
     .formularioRegistro{
         grid-area: formularioRegistro;
+        padding-left: 33px;
     }
 }

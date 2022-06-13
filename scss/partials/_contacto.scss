@@ -1,14 +1,16 @@
 .tituloContacto{
     text-align: center;
+    color: $color-principal;
 }
 
 .subtituloContacto{
     text-align: center;
+    color: $color-principal;    
 }
 
 .formulario{
     padding: 10px;
-    color: black;
+    color: $color-principal;
     text-align: center;
     display: flex;
     justify-content: center;
