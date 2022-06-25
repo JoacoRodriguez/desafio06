@@ -31,10 +31,15 @@ body{
     background-image: url(../img/imgFondo.jpeg);
 }
 
+.navbar-toggler{
+    background-color: #180c0ac3;
+}
+
+
 /* ESTILOS MENU */
 
 .navbar{
-    background-color: $color-fondo;
+    background-color:#180c0ac3 ;
     color: $color-principal;
 }
 

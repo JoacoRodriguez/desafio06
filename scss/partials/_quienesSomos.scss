@@ -20,6 +20,7 @@
     text-align: center;
     padding: 10px;
     color: $color-principal;
+    width: 0 auto;
 }
 
 .video{
@@ -47,8 +48,9 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas:"titulo titulo video video"
                             "parrafo parrafo video video";
+        width: 75%;
         height: auto;
-        width: auto;
+        margin: 0 auto;
         row-gap: 1rem;
     }
 
