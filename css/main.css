@@ -44,8 +44,17 @@ body {
 .dropdown-menu {
   background-color: black; }
 
+.dropdown-item {
+  color: white; }
+
 .navbar-nav {
   color: white; }
+  .navbar-nav .nav-item {
+    color: white; }
+    .navbar-nav .nav-item .nav-link {
+      color: white; }
+      .navbar-nav .nav-item .nav-link:hover {
+        color: black; }
 
 /* INDEX */
 a {

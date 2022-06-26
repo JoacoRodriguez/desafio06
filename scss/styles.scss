@@ -47,8 +47,21 @@ body{
     background-color: $color-fondo;
 }
 
+.dropdown-item{
+    color: white;
+}
+
 .navbar-nav{
     color: $color-principal;
+    .nav-item{
+        color: white;
+        .nav-link{
+            color: white;
+            &:hover{
+                color: black;
+            }
+        }
+    }
 }
 
 
